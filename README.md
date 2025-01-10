@@ -8,6 +8,7 @@ To run this project, ensure you have the following installed:
 
 - Docker (24.0.6)
 - Docker Compose (2.20.2)
+- Makefile
 - Devcontainer extension in VSCode
 
 ## Running the Project 
