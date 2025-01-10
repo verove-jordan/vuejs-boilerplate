@@ -1,0 +1,21 @@
+{
+	"name": "React.js for MacOS",
+	"build": { "dockerfile": "../Dockerfile"},
+	"runArgs": [
+        "--env-file", "${localWorkspaceFolder}/.env",
+        "--network=host",
+	"--privileged"
+	],
+	"mounts": [
+        "type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock"
+	],
+        "workspaceFolder": "/usr/src/web",
+	"customizations": {
+        "vscode": {
+          "extensions": [
+           "Vue.volar"
+          ]
+        }
+	},
+	"postCreateCommand": "sudo chown dev /var/run/docker.sock"
+}
