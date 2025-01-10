@@ -11,8 +11,7 @@ To run this project, ensure you have the following installed:
 - Makefile
 - Devcontainer extension in VSCode
 
-## Running the Project 
-Every commands here runned from the outside of the project
+## Running the Project
 
 To start the development containers, use:
 
