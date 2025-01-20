@@ -4,9 +4,10 @@ ARG USERNAME=node
 
 WORKDIR /usr/src/web
 
-COPY . .
 COPY package* .
 RUN npm install
+COPY . .
+RUN chown -R ${USERNAME}:${USERNAME} /usr/src/web
 
 
 USER ${USERNAME}
