@@ -4,7 +4,7 @@ ARG USERNAME=node
 
 WORKDIR /usr/src/web
 
-COPY node_modules* .
+COPY . .
 COPY package* .
 RUN npm install
 

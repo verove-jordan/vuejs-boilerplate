@@ -1,10 +1,10 @@
 {
-	"name": "React.js for MacOS",
+	"name": "vue.js for MacOS",
 	"build": { "dockerfile": "../Dockerfile"},
 	"runArgs": [
         "--env-file", "${localWorkspaceFolder}/.env",
         "--network=host",
-	"--privileged"
+		"--privileged"
 	],
 	"mounts": [
         "type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock"
